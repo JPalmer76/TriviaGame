@@ -1,0 +1,54 @@
+body {
+  background-image: url(../images/82317.jpg);
+  height: 100%;
+}
+
+.main-container {
+  background-color: bisque;
+  height: 1100px;
+  width: 960px;
+  opacity: 0.9;
+  margin: auto;
+  align-content: center;
+ 
+}
+
+#heading h1 {
+  font-size: 80px;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#countDown, .timer {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.firstQuestion {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.secondQuestion {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.thirdQuestion {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.buttons {
+  margin-left: 400px; 
+  display: inline-block;
+}
+
+
+
