@@ -40,7 +40,7 @@ $(document).ready(function() {
             answer: 1,
     }];
 
-    var counter = 5;
+    var counter = 30;
     
     var correctAnswer;
     var running = false;
@@ -67,17 +67,18 @@ $(document).ready(function() {
             if(!running) {
               countDown = setInterval(decrement, 1000);
               running = true;
-              if(counter === 0){
-              stop();
-            }
               console.log(counter)
-            }
+          }
+        }
     
-    function decrement(){
-      $("#countDown").html("<h2> Time Remaining:" + counter + "<h2>");
+    function decrement() {
       counter--;
+      $("#countDown").html("<h2> Time Remaining:" + counter + "<h2>");
+      if(counter === 0){
+        stop();
     }
-  }   
+  }
+   
   
   function stop() {
     running = false;
@@ -86,8 +87,10 @@ $(document).ready(function() {
   } 
 
   function displayQuestion() {
-    $("#firstQestText").html("<h2>" + questions + question [0] + "</h2>")
+    var index = Math.floor(Math.random() * questions.length)
+    $("#firstQestText").html("<h2>" + questions[index].question + "<h2>")
     console.log(questions.length)
+    
 
   }
 
