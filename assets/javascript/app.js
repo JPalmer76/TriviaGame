@@ -55,7 +55,7 @@ $(document).ready(function() {
   var userChoice = [];
   // var c_Answer = 0;
   // var corChoices = questionList[correctAnswer];
-  var counter = 3;
+  var counter = 30;
   var running = false;
   var countDown;
   
