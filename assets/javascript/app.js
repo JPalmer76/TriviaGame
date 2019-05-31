@@ -55,7 +55,7 @@ $(document).ready(function() {
   var userChoice = [];
   // var c_Answer = 0;
   // var corChoices = questionList[correctAnswer];
-  var counter = 10;
+  var counter = 3;
   var running = false;
   var countDown;
   
@@ -91,6 +91,7 @@ $(document).ready(function() {
       stop();
       alert("Time's UP!!");
       checkAnswers();
+      $("#reset").show();
     }
   }
 
@@ -153,4 +154,18 @@ $(document).ready(function() {
         $('#questions').append('</div>');
       }
   }
+// reset game ---- not working
+  $("#reset").on("click", function() {
+    $("#reset").hide();
+    $(choiceText).empty();
+    $("#questions").empty();
+    var userSelected = $(this).attr("data-value");
+    console.log(userSelected);
+    userChoice.push(userSelected);
+    
+    runCounter();
+    displayQuestionsAndAnswerChoices();
+  
+  })
+  
 });
