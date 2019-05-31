@@ -46,8 +46,13 @@ body {
 }
 
 .buttons {
-  margin-left: 400px; 
-  display: inline-block;
+  text-align: center;
+}
+
+.choiceDiv {
+  align-content: center;
+  margin-right: 15px;
+ 
 }
 
 

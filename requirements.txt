@@ -1,0 +1,13 @@
+trivia game
+    the page loads with a title and a start button
+    when the user clicks the start button
+        the start button becomes disabled
+        the reset button is still hidden
+        the timer starts to count down from x seconds
+        the user is also presented with 4 questions
+            the questions will be in the format of the multipleChoiceQuestion design in designdoc.txt
+        the user must answer all as many of the 4 questions as possible in x seconds
+            the questions are always be presented in the same order
+                the answers will always be presented in the same order
+    when the timer runs out we display the number of questions the user got right
+    the reset button becomes shown and clickable

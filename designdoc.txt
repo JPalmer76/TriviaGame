@@ -1,0 +1,77 @@
+Object design:
+multipleChoiceQuestion: Object
+    questionText: string
+    answerChoices: array of string
+    correctAnswer / correctAnswerIndex: string / number
+
+Example implementation:
+multipleChoiceAnswer: {
+  questionText: "How many feet is it to the very top (the tip) of the Eiffel Tower?",
+  answerChoices: ["1,063", "984", "1,000", "500"],
+  correctAnswer: "1,063"
+}
+
+checkCorrectAnswer() {
+    if selectedOption === correctAnswer
+        inform user they are correct
+    else
+        inform user they are wrong
+}
+
+array of multipleChoiceQuestion
+
+[
+    {
+        questionText: "How many feet is it to the very top (the tip) of the Eiffel Tower?",
+        answerChoices: [
+            "1,063", 
+            "984", 
+            "1,000", 
+            "500"
+        ],
+        correctAnswer: "1,063"
+    },
+    {
+        questionText: "How many feet is it to the very top (the tip) of the Eiffel Tower?",
+        answerChoices: [
+            "1,063", 
+            "984", 
+            "1,000", 
+            "500"
+        ],
+        correctAnswer: "1,063"
+    },
+    {
+        questionText: "How many feet is it to the very top (the tip) of the Eiffel Tower?",
+        answeChoices: [
+            "1,063", 
+            "984", 
+            "1,000", 
+            "500"
+        ],
+        correctAnswer: "1,063"
+    }
+]
+
+display all questions
+    display all answers f0r a given
+
+for each question in questionsArray
+    put the questionText on the screen
+
+    for each answer in answerChoices
+        display next to radio button
+
+for(i = 0; i < questionsArray.length; i++) {
+    display questionArray[i].questionText
+
+    // display answerChoices
+    for (j = 0; j < answerChoices.length; j++) {
+        display answerChoices[j];
+        // j++
+        //back to top of loop
+    }
+
+    // i++
+    //back to top of loop
+}
